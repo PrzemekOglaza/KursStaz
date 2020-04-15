@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.1062
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KursStaz.BL", "KursStaz.BL\KursStaz.BL.csproj", "{1C29523F-9F42-4006-B379-2652F3485BD1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testy", "Testy", "{70ED441A-9D54-41E3-9549-E81FD9E5A95E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kurs.StazTest", "Kurs.StazTest\Kurs.StazTest.csproj", "{1C222879-7635-4BEC-81D1-397E8B1955CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{1C29523F-9F42-4006-B379-2652F3485BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C29523F-9F42-4006-B379-2652F3485BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C29523F-9F42-4006-B379-2652F3485BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C222879-7635-4BEC-81D1-397E8B1955CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C222879-7635-4BEC-81D1-397E8B1955CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C222879-7635-4BEC-81D1-397E8B1955CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C222879-7635-4BEC-81D1-397E8B1955CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1C222879-7635-4BEC-81D1-397E8B1955CA} = {70ED441A-9D54-41E3-9549-E81FD9E5A95E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {57CA44E5-52E7-4D90-9774-8A84E78F0C1F}
