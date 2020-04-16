@@ -67,5 +67,30 @@ namespace Kurs.StazTest
             Assert.AreEqual(oczekiwana, aktualna);
 
         }
+
+        [TestMethod]
+        public void StaticTest()
+        {
+            // Arrange (przygotuj ters)
+
+            var kln1 = new Klient();
+            kln1.Imie = "Jacek";
+            Klient.Licznik += 1;
+
+            var kln2 = new Klient();
+            kln2.Imie = "Olek";
+            Klient.Licznik += 1;
+
+            var kln3 = new Klient();
+            kln3.Imie = "Elek";
+            Klient.Licznik += 1;
+            // Act (działaj)
+
+
+
+            // Assert (potwierdz test)
+
+            Assert.AreEqual(3, Klient.Licznik);
+        }
     }
 }
