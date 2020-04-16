@@ -27,5 +27,45 @@ namespace Kurs.StazTest
             Assert.AreEqual(oczekiwana, aktualna);
 
         }
+
+        [TestMethod]
+        public void ImieNazwiskoImiePusteTest()
+        {
+            // Arrange (przygotuj ters)
+
+            Klient klient = new Klient();
+                klient.Nazwisko = "Kowal";
+
+            string oczekiwana = "Kowal";
+
+            // Act (działaj)
+
+            string aktualna = klient.ImieNazwisko;
+
+            // Assert (potwierdz test)
+
+            Assert.AreEqual(oczekiwana, aktualna);
+
+        }
+
+        [TestMethod]
+        public void ImieNazwiskoNazwiskoPusteTest()
+        {
+            // Arrange (przygotuj ters)
+
+            Klient klient = new Klient();
+            klient.Imie = "Robert";
+
+            string oczekiwana = "Robert";
+
+            // Act (działaj)
+
+            string aktualna = klient.ImieNazwisko;
+
+            // Assert (potwierdz test)
+
+            Assert.AreEqual(oczekiwana, aktualna);
+
+        }
     }
 }
